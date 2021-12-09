@@ -4,8 +4,7 @@ Create a simple CRM for wordpress,
 Using this shortcode :
 
 ```html
-[
-    simple_crm_form name_label="name label"
+[simple_crm_form name_label="name label"
     phone_label="Phone label"
     email_label="Email Label"
     desire_budget_label="Desire label"
@@ -15,8 +14,7 @@ Using this shortcode :
     email_length="20"
     desire_budget_length="20"
     message_length="20"
-    message_rows="4"
-]
+    message_rows="4"]
 ```
 
 **== Installation ==**
