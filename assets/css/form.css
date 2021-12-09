@@ -1,0 +1,30 @@
+.simple-crm-main-form-wrapper {
+    width: 100%;
+}
+
+.simple-crm-main-form-wrapper .simple-crm-row {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.simple-crm-main-form-wrapper input:not(textarea) {
+    width: 70% !important;
+}
+
+.simple-crm-main-form-wrapper .simple-crm-row label {
+    width: 20% !important;
+    display: inline-block;
+}
+
+.simple-crm-main-form-wrapper .simple-crm-row:last-child {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.simple-crm-main-form-result {
+    width: 100%;
+    padding:10px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    display: none;
+}
