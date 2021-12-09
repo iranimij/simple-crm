@@ -1,15 +1,3 @@
-**=== Simple CRM ===**
-
-Contributors: Iman Heydari
-Tags: simple-crm
-Requires at least: 4.7
-Tested up to: 5.4
-Requires PHP: 5.6
-License: GPLv3
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
-
-Simple crm plugin.
-
 **== Description ==**
 
 Create a simple CRM for wordpress,
