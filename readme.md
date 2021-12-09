@@ -3,7 +3,7 @@
 Create a simple CRM for wordpress,
 Using this shortcode :
 
-`
+```html
 [
     simple_crm_form name_label="name label"
     phone_label="Phone label"
@@ -17,7 +17,7 @@ Using this shortcode :
     message_length="20"
     message_rows="4"
 ]
-`
+```
 
 **== Installation ==**
 
