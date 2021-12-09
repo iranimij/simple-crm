@@ -1,6 +1,6 @@
 **== Description ==**
 
-Create a simple CRM for wordpress,
+Create a simple CRM form for wordpress,
 Using this shortcode :
 
 ```html
