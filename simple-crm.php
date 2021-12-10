@@ -120,6 +120,16 @@ if ( ! class_exists( 'simple_crm' ) ) {
             add_action( 'admin_init', [ $this, 'admin_init' ] );
 
             add_action( 'wp_enqueue_scripts', [ $this, 'frontend_enqueue_scripts' ], 10 );
+            add_action( 'plugins_loaded', [ $this, 'load_plugin_text_domain' ] );
+        }
+
+        /**
+         * Loads plugin text domain.
+         *
+         * @since NEXT
+         */
+        public function load_plugin_text_domain() {
+            load_plugin_textdomain( 'simple-crm', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
         }
 
         /**
@@ -175,11 +185,11 @@ if ( ! class_exists( 'simple_crm' ) ) {
          */
         public function create_form_by_shortcode( $atts ) {
             $attributes = shortcode_atts( [
-                'name_label' => 'Name', // translation method should be applied.
-                'phone_label' => 'Phone',
-                'email_label' => 'Email',
-                'desire_budget_label' => 'Desire Budget',
-                'message_label' => 'Message',
+                'name_label' => esc_html__( 'Name', 'simple-crm' ), // translation method should be applied.
+                'phone_label' => esc_html__( 'Phone', 'simple-crm' ),
+                'email_label' => esc_html__( 'Email', 'simple-crm' ),
+                'desire_budget_label' => esc_html__( 'Desire Budget', 'simple-crm' ),
+                'message_label' => esc_html__( 'Message', 'simple-crm' ),
                 'name_length' => 100,
                 'phone_length' => 100,
                 'email_length' => 100,
@@ -207,7 +217,7 @@ if ( ! class_exists( 'simple_crm' ) ) {
          */
         public function register_post_types() {
            register_post_type( 'customer', [
-               'label' => 'Customer', // a translation function should be added.
+               'label' => esc_html__( 'Customer', 'simple-crm' ), // a translation function should be added.
                'public' => false,
                'show_ui' => true,
                'taxonomies' => [ 'category', 'post_tag' ],

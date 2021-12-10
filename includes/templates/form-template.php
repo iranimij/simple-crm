@@ -27,7 +27,7 @@ $attributes = get_query_var( 'simple_crm_form_attributes' );
         </div>
         <input type="hidden" name="data[current_time]" value="<?php echo esc_html( $attributes['current_time'] ) ?>">
         <div class="simple-crm-row">
-            <button type="submit" class="simple-crm-main-form-submit-button">Submit</button>
+            <button type="submit" class="simple-crm-main-form-submit-button"><?php echo esc_html__( 'Submit', 'simple-crm' ); ?></button>
         </div>
         <div class="simple-crm-main-form-result">
 
