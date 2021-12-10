@@ -120,16 +120,6 @@ if ( ! class_exists( 'simple_crm' ) ) {
             add_action( 'admin_init', [ $this, 'admin_init' ] );
 
             add_action( 'wp_enqueue_scripts', [ $this, 'frontend_enqueue_scripts' ], 10 );
-            add_action( 'plugins_loaded', [ $this, 'load_plugin_text_domain' ] );
-        }
-
-        /**
-         * Loads plugin text domain.
-         *
-         * @since NEXT
-         */
-        public function load_plugin_text_domain() {
-            load_plugin_textdomain( 'simple-crm', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
         }
 
         /**
@@ -157,6 +147,8 @@ if ( ! class_exists( 'simple_crm' ) ) {
             $this->load_files( [ 'ajax-requests' ] );
             $this->register_post_types();
             $this->create_shortcodes();
+
+            load_plugin_textdomain( 'simple-crm', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
         }
 
         /**
