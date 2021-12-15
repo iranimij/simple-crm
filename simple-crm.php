@@ -128,7 +128,7 @@ if ( ! class_exists( 'simple_crm' ) ) {
          * @since NEXT
          */
         protected function define_constants() {
-            $plugin_data = get_file_data( __FILE__, array( 'Plugin Name', 'Version' ), 'sellkit' );
+            $plugin_data = get_file_data( __FILE__, array( 'Plugin Name', 'Version' ), 'simple-crm' );
 
             self::$plugin_basename   = plugin_basename( __FILE__ );
             self::$plugin_name       = array_shift( $plugin_data );
@@ -337,7 +337,7 @@ if ( ! class_exists( 'simple_crm' ) ) {
 
 if ( ! function_exists( 'simple_crm' ) ) {
     /**
-     * Initialize the Sellkit.
+     * Initialize the simple-crm.
      *
      * @since NEXT
      */
@@ -347,7 +347,7 @@ if ( ! function_exists( 'simple_crm' ) ) {
 }
 
 /**
- * Initialize the Sellkit application.
+ * Initialize the simple-crm application.
  *
  * @since NEXT
  */
